@@ -1,6 +1,6 @@
 # Netflix Clone
 
-This is a Netflix clone built with HTML and CSS. You can view the deployed project here: [https://honey-raj-55.github.io/Netflix-Clone/] (https://honey-raj-55.github.io/Netflix-Clone/).
+This is a Netflix clone built with HTML and CSS. You can view the deployed project here: https://honey-raj-55.github.io/Netflix-Clone/.
 
 ## Table of Contents
 

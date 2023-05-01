@@ -107,5 +107,32 @@
             </ul>
         </div>
     </footer>
+    
+    <script>const emailInput = document.getElementById('email');
+
+function sanitizeInput(input) {
+  const div = document.createElement('div');
+  div.textContent = input;
+  return div.innerHTML;
+}
+
+function validateEmail(email) {
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return regex.test(email);
+}
+
+emailInput.addEventListener('blur', () => {
+  const email = emailInput.value.trim();
+  if (email.length < 6 || email.length > 50) {
+    alert('Please enter a valid email address');
+    return;
+  }
+  if (!validateEmail(email)) {
+    alert('Please enter a valid email address');
+    return;
+  }
+  emailInput.value = sanitizeInput(email);
+});
+</script>
 </body>
 </html>
